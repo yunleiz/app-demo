@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dylan.app_donotstop.Speed">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:id="@+id/tttt"
+        android:background="#ff000000"
+        android:text="   Real-time Speed (km/h)"
+        android:textSize="20dp"
+        android:gravity="center_vertical"
+        android:textColor="#ffff"
+        android:layout_height="60dp"
+        android:layout_gravity="center" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start"
+            android:textSize="23dp"
+            android:id="@+id/record"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="23dp"
+            android:text="stop"
+            android:id="@+id/StoreGPS"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26dp"
+            android:text="  Speed: "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:id="@+id/info"
+            android:textSize="26dp"
+            android:background="#ff008000"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="17dp">
+    </View>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="290dp"
+        android:layout_height="400dp"
+        android:layout_x="12dp"
+        android:layout_y="41dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="290dp"
+        android:layout_height="420dp"
+        android:layout_x="13dp"
+        android:layout_y="215dp"
+        android:orientation="vertical" />
+
+</LinearLayout>
+

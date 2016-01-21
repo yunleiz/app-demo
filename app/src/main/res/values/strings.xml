@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Do not stop</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_speed">Speed</string>
+    <string name="title_activity_input">Input</string>
+    <string name="title_activity_results">Results</string>
+    <string-array name="days">
+
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+        <item>Sun</item>
+        <item>All</item>
+
+    </string-array>
+
+    <string-array name="time">
+
+        <item>am peak</item>
+        <item>Base</item>
+        <item>Early am</item>
+        <item>Mid Day</item>
+        <item>pm Peak</item>
+        <item>Early eve</item>
+        <item>evening</item>
+        <item>late Evening</item>
+        <item>last trips</item>
+        <item>Peak</item>
+        <item>Sunday and holidays</item>
+        <item>all</item>
+
+    </string-array>
+
+    <string-array name="route">
+
+        <item>1</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>555</item>
+
+    </string-array>
+
+    <string-array name="pattern1">
+
+        <item>50562</item>
+        <item>54323</item>
+        <item>65487</item>
+
+    </string-array>
+
+    <string-array name="pattern3">
+
+        <item>54196</item>
+        <item>54689</item>
+        <item>59134</item>
+
+    </string-array>
+
+    <string-array name="pattern4">
+
+        <item>54332</item>
+        <item>54346</item>
+        <item>60909</item>
+
+    </string-array>
+
+    <string-array name="pattern5">
+
+        <item>50441</item>
+        <item>59143</item>
+        <item>65698</item>
+
+    </string-array>
+
+    <string-array name="pattern6">
+
+        <item>58961</item>
+        <item>64210</item>
+        <item>65519</item>
+
+    </string-array>
+
+    <string-array name="pattern555">
+
+        <item>1234567</item>
+
+    </string-array>
+
+
+    <string-array name="patternDefault">
+
+        <item>50562</item>
+        <item>54323</item>
+        <item>65487</item>
+        <item>54196</item>
+        <item>54689</item>
+        <item>59134</item>
+        <item>54332</item>
+        <item>54346</item>
+        <item>60909</item>
+        <item>50441</item>
+        <item>59143</item>
+        <item>65698</item>
+        <item>58961</item>
+        <item>64210</item>
+        <item>65519</item>
+        <item>1234567</item>
+
+    </string-array>
+
+</resources>
+

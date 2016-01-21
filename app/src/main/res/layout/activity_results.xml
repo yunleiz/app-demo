@@ -1,0 +1,288 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:isScrollContainer="true"
+    tools:context="com.example.dylan.app_donotstop.Results">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:background="#ff000000"
+        android:text="   Results"
+        android:textSize="20dp"
+        android:gravity="center_vertical"
+        android:textColor="#ffff"
+        android:layout_height="70dp"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="16dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView  style="?android:textAppearanceLarge"
+            android:text="                    Total Estimated"
+            android:id="@+id/wo1"
+            android:textColor="#ff008000"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+        <TextView  style="?android:textAppearanceLarge"
+            android:layout_below="@+id/wo1"
+            android:text="                       Dwell Time (s)"
+            android:textColor="#ff008000"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/estimated"
+            android:layout_toRightOf="@+id/wo1"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:textSize="40dp"
+            android:textColor="#ff008000"
+            android:layout_height="60dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="20dp" />
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView  style="?android:textAppearanceLarge"
+            android:text="                           Total Actual"
+            android:id="@+id/wo2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+        <TextView  style="?android:textAppearanceLarge"
+            android:layout_below="@+id/wo2"
+            android:text="                       Dwell Time (s)"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/actual"
+            android:layout_toRightOf="@+id/wo2"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:layout_marginLeft="10dp"
+            android:textSize="40dp"
+            android:textColor="#ff000000"
+            android:layout_height="60dp" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView  style="?android:textAppearanceLarge"
+            android:text="              Average Estimated"
+            android:id="@+id/wo3"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textColor="#ff008000" />
+
+        <TextView  style="?android:textAppearanceLarge"
+            android:layout_below="@+id/wo3"
+            android:text="           Dwell Time / stop (s)"
+
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textColor="#ff008000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/avgestimated"
+            android:layout_toRightOf="@+id/wo3"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:textSize="40dp"
+            android:textColor="#ff008000"
+            android:layout_height="60dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView  style="?android:textAppearanceLarge"
+            android:text="                     Average Actual"
+            android:id="@+id/wo4"
+            android:layout_width="wrap_content"
+
+            android:layout_height="30dp"
+            android:textColor="#ff000000" />
+
+        <TextView  style="?android:textAppearanceLarge"
+            android:layout_below="@+id/wo4"
+            android:text="           Dwell Time / stop (s)"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textColor="#ff000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/avgactual"
+            android:layout_toRightOf="@+id/wo4"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:textSize="40dp"
+            android:textColor="#ff000000"
+            android:layout_height="60dp" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="17dp"
+        />
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<TextView  style="?android:textAppearanceLarge"-->
+    <!--android:text="   Dwell Time Difference (s)"-->
+    <!--android:id="@+id/wo5"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:textColor="#ff008000" />-->
+
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:id="@+id/difference"-->
+    <!--android:layout_toRightOf="@+id/wo5"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:gravity="right"-->
+    <!--android:textSize="40dp"-->
+    <!--android:textColor="#ff008000"-->
+    <!--android:layout_height="60dp" />-->
+
+    <!--</RelativeLayout>-->
+
+
+    <!--<View-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--/>-->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView  style="?android:textAppearanceLarge"
+            android:text="Total Average On/Off (pers.)"
+            android:id="@+id/wo6"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textColor="#ff008000" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/on"
+            android:layout_toRightOf="@+id/wo6"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:textSize="40dp"
+            android:textColor="#ff008000"
+            android:layout_height="60dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView  style="?android:textAppearanceLarge"
+            android:text="Total Average Speed (km/h)"
+            android:id="@+id/wo7"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_height="50dp"
+            android:textColor="#ff000000" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/speed"
+            android:layout_toRightOf="@+id/wo7"
+            android:layout_marginLeft="10dp"
+            android:textSize="40dp"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:textColor="#ff000000"
+            android:layout_height="60dp" />
+
+    </RelativeLayout>
+
+
+
+
+
+    <!--<TextView   style="?android:textAppearanceLarge"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="0.6"-->
+    <!--android:text="Total Average Trip Speed (km/h) "/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:textSize="29dp"-->
+    <!--android:typeface="sans"-->
+    <!--android:id="@+id/speed"/>-->
+        </LinearLayout>
+
+</LinearLayout>
+
+

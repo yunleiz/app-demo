@@ -1,0 +1,238 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dylan.app_donotstop.Input">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:id="@+id/tttt"
+        android:background="#ff000000"
+        android:text="   Input"
+        android:textSize="20dp"
+        android:gravity="center_vertical"
+        android:textColor="#ffff"
+        android:layout_height="60dp"
+        android:layout_gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="60dp"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            />
+        <TableRow>
+
+                <TextView style="?android:textAppearanceLarge"
+                    android:text="Start Date"
+                    android:id="@+id/textView"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_column="0"/>
+
+                <Button style="?android:attr/buttonStyleSmall"
+                    android:id="@+id/checkResults"
+                    android:text="SELECT"
+                    />
+
+               <TextView  style="?android:textAppearanceLarge"
+                   android:paddingLeft="19dp"
+                 android:id="@+id/calendar"/>
+
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            />
+
+        <TableRow>
+                <TextView style="?android:textAppearanceLarge"
+
+                    android:text="End Date"
+                    android:id="@+id/textView1"
+                    android:layout_column="0"/>
+
+                <Button style="?android:attr/buttonStyleSmall"
+                    android:id="@+id/checkResults1"
+                    android:text="SELECT"
+                    />
+
+                <TextView style="?android:textAppearanceLarge"
+                 android:paddingLeft="19dp"
+                android:id="@+id/calendar1"/>
+
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="12dp"
+            />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.30"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Day of Week"
+                android:layout_below="@+id/textView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/dayweek"
+                />
+
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="17dp"
+            />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.30"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Time of Day"
+                android:layout_below="@+id/textView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/time"
+                />
+
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="17dp"
+            />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.30"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Route"
+                android:id="@+id/textView6"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/route"></Spinner>
+            <!--android:spinnerMode="dropdown" />-->
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="17dp"
+            />
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.30"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Pattern"
+                android:id="@+id/textView7"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/routeP"></Spinner>
+            <!--android:spinnerMode="dropdown" />-->
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="60dp">
+            </View>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/sendResults"
+        android:layout_gravity="center"
+        android:layout_margin="110dp"
+        android:text="NEXT"
+        android:textSize="23dp"
+        android:layout_column="16"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</RelativeLayout>
